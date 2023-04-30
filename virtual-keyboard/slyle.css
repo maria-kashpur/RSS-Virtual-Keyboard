@@ -160,28 +160,25 @@
 
 .ArrowUp::after {
   content: "";
-  background: url(accets/icon/4829871_arrows_up_upload_icon.svg) no-repeat 50% 50%;
+  background: url(assets/icons/4829871_arrows_up_upload_icon.svg) no-repeat 50% 50%;
   width: 50%;
   height: 50%;
 }
 .ArrowDown::after {
   content: "";
-  background: url(accets/icon/4829873_arrow_down_download_icon.svg) no-repeat 50% 50%;
+  background: url(assets/icons/4829873_arrow_down_download_icon.svg) no-repeat 50% 50%;
   width: 50%;
   height: 50%;
 }
 .ArrowLeft::after {
   content: "";
-  background: url(accets/icon/4829870_arrow_back_left_icon.svg) no-repeat 50% 50%;
+  background: url(assets/icons/4829870_arrow_back_left_icon.svg) no-repeat 50% 50%;
   width: 50%;
   height: 50%;
 }
 .ArrowRight::after {
   content: "";
-  background: url(accets/icon/4829869_arrow_next_right_icon.svg) no-repeat 50% 50%;
+  background: url(assets/icons/4829869_arrow_next_right_icon.svg) no-repeat 50% 50%;
   width: 50%;
   height: 50%;
 }
-
-
-
