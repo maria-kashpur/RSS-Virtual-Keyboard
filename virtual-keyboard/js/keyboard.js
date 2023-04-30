@@ -1,58 +1,23 @@
-import {KEYS, KEY_ROWS} from './keys.js'
-
-
-
-// переменные
-const body = document.body;
-const keyboardSection = createEl(body, 'section', 'keyboard');
-
-let lang = 'en'
-
-keyboardSection.innerHTML = `<h1 class="keyboard__title">Виртуальная RSS-клавиатура</h1>
-<textarea class="keyboard__text" rows="5" cols="50" autofocus></textarea>
-<div class="keyboard__body"></div>
-<div class="keyboard__additional-inf">
-<p>Клавиатура создана в операционной системе MacOS</p>
-<p>Для переключения языка: левыe ctrl + alt</p>
-</div>`;
-
-
-
-function paintingKeyboard () {
-  const keyWrapper = document.querySelector('.keyboard__body');
-
-  KEY_ROWS.forEach(el => {
-    let keyRow = createEl(keyWrapper, 'div', 'keys__row');
-    el.forEach(subEl => {
-      let key = createEl(keyRow, 'button', `key`);
-      key.classList.add(`${subEl}`)
-      key.textContent = KEYS[subEl][lang].caseDown
-    })
-  })
-}
-// ---------------------------
 const textArea = document.querySelector('.keyboard__text')
-
+const keys = document.querySelectorAll('.key')
 let isCapsLock = false;
 
 function convertToUpperCase () {
-  const keys = document.querySelectorAll('.key')
   keys.forEach(key => {key.textContent = key.textContent.toUpperCase()})
+
 }
 
 function convertToLowerCase () {
-  const keys = document.querySelectorAll('.key')
   keys.forEach(key => {key.textContent = key.textContent.toLowerCase()})
 }
 
 function clickTextEntry () {
-  const keys = document.querySelectorAll('.key')
   keys.forEach(key => {
     key.addEventListener('click', (event) => {
         let posStart = textArea.selectionStart;
         let posEnd = textArea.selectionEnd;
+        // click 'Backspace'
         if (key.classList.contains('Backspace')) {
-          // click 'Backspace'
           if (posStart === posEnd && posStart === textArea.value) {
             textArea.focus()
             let start = posStart === 0 ? 0 : posStart - 1
@@ -66,12 +31,10 @@ function clickTextEntry () {
             textArea.setRangeText('', posStart, posEnd, "end")
           }
         } else if (key.classList.contains('Tab')) {
-          // click 'Тab'
           textArea.focus();
           let tab = '\t';
           textArea.setRangeText(tab, posStart, posEnd, "end");
         } else if (key.classList.contains('CapsLock')) {
-          // click 'CapsLock'
           textArea.focus()
           if (key.classList.contains('on')) {
             key.classList.remove('on');
@@ -83,24 +46,6 @@ function clickTextEntry () {
             isCapsLock = true;
             convertToUpperCase()
           }
-        } else if (key.classList.contains('ArrowLeft')) {
-          // click 'ArrowLeft'
-          textArea.focus()
-          let range = textArea.selectionStart === 0 ? 0 : textArea.selectionStart - 1;
-          textArea.setSelectionRange(range, range)
-        } else if (key.classList.contains('ArrowRight')) {
-          // click 'ArrowRight'
-          textArea.focus()
-          let start = textArea.selectionStart === textArea.value.length  ? textArea.value.length : textArea.selectionStart + 1;
-          textArea.setSelectionRange(range, range)
-        } else if (key.classList.contains('ArrowUp')) {
-          // click 'ArrowUp'
-          textArea.focus()
-          console.dir(textArea.style.cssText)
-          console.dir(textArea)
-          
-          // let start = textArea.selectionStart === textArea.value.length  ? textArea.value.length : textArea.selectionStart + 1;
-          // textArea.setSelectionRange(range, range)
         } else {
           let letter = key.textContent;
           textArea.focus()
@@ -124,7 +69,6 @@ function keyPressTextEntry () {
     } 
 
   })
-
   document.addEventListener('keyup', (event) => {
     let presskey = document.querySelector(`.${event.code}`);
 
@@ -140,26 +84,12 @@ function keyPressTextEntry () {
   })
 }
 
-
-
-
-
-
-
-
-
-function createEl(parent, tag, className) {
-  const el = document.createElement(tag);
-  el.classList.add(className);
-  parent.append(el)
-  return el
+function initeKeyboad () {
+  clickTextEntry ();
+  keyPressTextEntry ();
 }
 
 
 
+// export {initeKeyboad}
 
-
-
-paintingKeyboard()
-clickTextEntry ();
-keyPressTextEntry ();
