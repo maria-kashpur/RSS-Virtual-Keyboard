@@ -9,7 +9,7 @@ const KEYS = {
       caseDown: 'ё',
       shift: '~',
       option: '`',
-    }
+    },
   },
   Digit1: {
     en: {
@@ -21,7 +21,7 @@ const KEYS = {
       caseDown: '1',
       shift: '!',
       option: '!',
-    }
+    },
   },
   Digit2: {
     en: {
@@ -33,7 +33,7 @@ const KEYS = {
       caseDown: '2',
       shift: '"',
       option: '@',
-    }
+    },
   },
   Digit3: {
     en: {
@@ -45,7 +45,7 @@ const KEYS = {
       caseDown: '3',
       shift: '№',
       option: '#',
-    }
+    },
   },
   Digit4: {
     en: {
@@ -57,7 +57,7 @@ const KEYS = {
       caseDown: '4',
       shift: ';',
       option: '$',
-    }
+    },
   },
   Digit5: {
     en: {
@@ -69,7 +69,7 @@ const KEYS = {
       caseDown: '5',
       shift: '%',
       option: '©',
-    }
+    },
   },
   Digit6: {
     en: {
@@ -81,7 +81,7 @@ const KEYS = {
       caseDown: '6',
       shift: ':',
       option: '^',
-    }
+    },
   },
   Digit7: {
     en: {
@@ -93,7 +93,7 @@ const KEYS = {
       caseDown: '7',
       shift: '?',
       option: '&',
-    }
+    },
   },
   Digit8: {
     en: {
@@ -105,7 +105,7 @@ const KEYS = {
       caseDown: '8',
       shift: '*',
       option: '₽',
-    }
+    },
   },
   Digit9: {
     en: {
@@ -117,7 +117,7 @@ const KEYS = {
       caseDown: '9',
       shift: '(',
       option: '(',
-    }
+    },
   },
   Digit0: {
     en: {
@@ -129,7 +129,7 @@ const KEYS = {
       caseDown: '0',
       shift: ')',
       option: ')',
-    }
+    },
   },
   Minus: {
     en: {
@@ -141,7 +141,7 @@ const KEYS = {
       caseDown: '-',
       shift: '_',
       option: '–',
-    }
+    },
   },
   Equal: {
     en: {
@@ -153,7 +153,7 @@ const KEYS = {
       caseDown: '=',
       shift: '+',
       option: '≠',
-    }
+    },
   },
   Backspace: {
     en: {
@@ -165,7 +165,7 @@ const KEYS = {
       caseDown: '',
       shift: '',
       option: '',
-    }
+    },
   },
   Delete: {
     en: {
@@ -177,7 +177,7 @@ const KEYS = {
       caseDown: '',
       shift: '',
       option: '',
-    }
+    },
   },
   Tab: {
     en: {
@@ -189,7 +189,7 @@ const KEYS = {
       caseDown: '\t',
       shift: '\t',
       option: '\t',
-    }
+    },
   },
   KeyQ: {
     en: {
@@ -201,7 +201,7 @@ const KEYS = {
       caseDown: 'й',
       shift: 'Й',
       option: 'ј',
-    }
+    },
   },
   KeyW: {
     en: {
@@ -213,19 +213,19 @@ const KEYS = {
       caseDown: 'ц',
       shift: 'Ц',
       option: 'џ',
-    }
+    },
   },
   KeyE: {
     en: {
       caseDown: 'e',
       shift: 'E',
-      option: '\´',
+      option: '´',
     },
     ru: {
       caseDown: 'у',
       shift: 'У',
       option: 'ў',
-    }
+    },
   },
   KeyR: {
     en: {
@@ -237,7 +237,7 @@ const KEYS = {
       caseDown: 'к',
       shift: 'К',
       option: 'ќ',
-    }
+    },
   },
   KeyT: {
     en: {
@@ -249,7 +249,7 @@ const KEYS = {
       caseDown: 'е',
       shift: 'Е',
       option: '†',
-    }
+    },
   },
   KeyY: {
     en: {
@@ -261,7 +261,7 @@ const KEYS = {
       caseDown: 'н',
       shift: 'Н',
       option: 'њ',
-    }
+    },
   },
   KeyU: {
     en: {
@@ -273,7 +273,7 @@ const KEYS = {
       caseDown: 'г',
       shift: 'Г',
       option: 'ѓ',
-    }
+    },
   },
   KeyI: {
     en: {
@@ -285,7 +285,7 @@ const KEYS = {
       caseDown: 'ш',
       shift: 'Ш',
       option: 'ѕ',
-    }
+    },
   },
   KeyO: {
     en: {
@@ -296,8 +296,8 @@ const KEYS = {
     ru: {
       caseDown: 'щ',
       shift: 'Щ',
-      option: `'`,
-    }
+      option: '\'',
+    },
   },
   KeyP: {
     en: {
@@ -309,7 +309,7 @@ const KEYS = {
       caseDown: 'з',
       shift: 'З',
       option: '‘',
-    }
+    },
   },
   BracketLeft: {
     en: {
@@ -321,7 +321,7 @@ const KEYS = {
       caseDown: 'х',
       shift: 'Х',
       option: '“',
-    }
+    },
   },
   BracketRight: {
     en: {
@@ -333,7 +333,7 @@ const KEYS = {
       caseDown: 'ъ',
       shift: 'Ъ',
       option: '«',
-    }
+    },
   },
   Backslash: {
     en: {
@@ -345,7 +345,7 @@ const KEYS = {
       caseDown: '\\',
       shift: '/',
       option: '|',
-    }
+    },
   },
   CapsLock: {
     en: {
@@ -357,7 +357,7 @@ const KEYS = {
       caseDown: '',
       shift: '',
       option: '',
-    }
+    },
   },
   KeyA: {
     en: {
@@ -369,7 +369,7 @@ const KEYS = {
       caseDown: 'ф',
       shift: 'Ф',
       option: 'd',
-    }
+    },
   },
   KeyS: {
     en: {
@@ -381,7 +381,7 @@ const KEYS = {
       caseDown: 'ы',
       shift: 'Ы',
       option: 'z',
-    }
+    },
   },
   KeyD: {
     en: {
@@ -393,7 +393,7 @@ const KEYS = {
       caseDown: 'в',
       shift: 'В',
       option: 'ћ',
-    }
+    },
   },
   KeyF: {
     en: {
@@ -405,7 +405,7 @@ const KEYS = {
       caseDown: 'а',
       shift: 'А',
       option: '÷',
-    }
+    },
   },
   KeyG: {
     en: {
@@ -417,7 +417,7 @@ const KEYS = {
       caseDown: 'п',
       shift: 'П',
       option: '…',
-    }
+    },
   },
   KeyH: {
     en: {
@@ -429,7 +429,7 @@ const KEYS = {
       caseDown: 'р',
       shift: 'Р',
       option: '•',
-    }
+    },
   },
   KeyJ: {
     en: {
@@ -441,7 +441,7 @@ const KEYS = {
       caseDown: 'о',
       shift: 'О',
       option: '∆',
-    }
+    },
   },
   KeyK: {
     en: {
@@ -453,7 +453,7 @@ const KEYS = {
       caseDown: 'л',
       shift: 'Л',
       option: 'љ',
-    }
+    },
   },
   KeyL: {
     en: {
@@ -465,7 +465,7 @@ const KEYS = {
       caseDown: 'д',
       shift: 'Д',
       option: 'l',
-    }
+    },
   },
   Semicolon: {
     en: {
@@ -477,11 +477,11 @@ const KEYS = {
       caseDown: 'ж',
       shift: 'Ж',
       option: '«',
-    }
+    },
   },
   Quote: {
     en: {
-      caseDown: `'`,
+      caseDown: '\'',
       shift: '"',
       option: 'æ',
     },
@@ -489,7 +489,7 @@ const KEYS = {
       caseDown: 'э',
       shift: 'Э',
       option: 'є',
-    }
+    },
   },
   Enter: {
     en: {
@@ -501,7 +501,7 @@ const KEYS = {
       caseDown: '\n',
       shift: '\n',
       option: '\n',
-    }
+    },
   },
   ShiftLeft: {
     en: {
@@ -513,7 +513,7 @@ const KEYS = {
       caseDown: '',
       shift: '',
       option: '',
-    }
+    },
   },
   KeyZ: {
     en: {
@@ -525,7 +525,7 @@ const KEYS = {
       caseDown: 'я',
       shift: 'Я',
       option: 'ђ',
-    }
+    },
   },
   KeyX: {
     en: {
@@ -537,7 +537,7 @@ const KEYS = {
       caseDown: 'ч',
       shift: 'Ч',
       option: 'x',
-    }
+    },
   },
   KeyC: {
     en: {
@@ -549,7 +549,7 @@ const KEYS = {
       caseDown: 'с',
       shift: 'С',
       option: 'c',
-    }
+    },
   },
   KeyV: {
     en: {
@@ -561,7 +561,7 @@ const KEYS = {
       caseDown: 'м',
       shift: 'М',
       option: 'v',
-    }
+    },
   },
   KeyB: {
     en: {
@@ -573,7 +573,7 @@ const KEYS = {
       caseDown: 'и',
       shift: 'И',
       option: 'і',
-    }
+    },
   },
   KeyN: {
     en: {
@@ -585,7 +585,7 @@ const KEYS = {
       caseDown: 'т',
       shift: 'Т',
       option: 'ƒ',
-    }
+    },
   },
   KeyM: {
     en: {
@@ -597,7 +597,7 @@ const KEYS = {
       caseDown: 'ь',
       shift: 'Ь',
       option: 'm',
-    }
+    },
   },
   Comma: {
     en: {
@@ -609,7 +609,7 @@ const KEYS = {
       caseDown: 'б',
       shift: 'Б',
       option: '≤',
-    }
+    },
   },
   Period: {
     en: {
@@ -621,7 +621,7 @@ const KEYS = {
       caseDown: 'ю',
       shift: 'Ю',
       option: '≥',
-    }
+    },
   },
   Slash: {
     en: {
@@ -633,7 +633,7 @@ const KEYS = {
       caseDown: '.',
       shift: ',',
       option: 'ї',
-    }
+    },
   },
   ArrowUp: {
     en: {
@@ -645,7 +645,7 @@ const KEYS = {
       caseDown: '',
       shift: '',
       option: '',
-    }
+    },
   },
   ShiftRight: {
     en: {
@@ -657,7 +657,7 @@ const KEYS = {
       caseDown: '',
       shift: '',
       option: '',
-    }
+    },
   },
   ControlLeft: {
     en: {
@@ -669,7 +669,7 @@ const KEYS = {
       caseDown: '',
       shift: '',
       option: '',
-    }
+    },
   },
   AltLeft: {
     en: {
@@ -681,7 +681,7 @@ const KEYS = {
       caseDown: '',
       shift: '',
       option: '',
-    }
+    },
   },
   MetaLeft: {
     en: {
@@ -693,7 +693,7 @@ const KEYS = {
       caseDown: '',
       shift: '',
       option: '',
-    }
+    },
   },
   Space: {
     en: {
@@ -705,7 +705,7 @@ const KEYS = {
       caseDown: ' ',
       shift: ' ',
       option: ' ',
-    }
+    },
   },
   MetaRight: {
     en: {
@@ -717,7 +717,7 @@ const KEYS = {
       caseDown: '',
       shift: '',
       option: '',
-    }
+    },
   },
   AltRight: {
     en: {
@@ -729,7 +729,7 @@ const KEYS = {
       caseDown: '',
       shift: '',
       option: '',
-    }
+    },
   },
   ArrowLeft: {
     en: {
@@ -741,19 +741,7 @@ const KEYS = {
       caseDown: '',
       shift: '',
       option: '',
-    }
-  },
-  ArrowUp: {
-    en: {
-      caseDown: '',
-      shift: '',
-      option: '',
     },
-    ru: {
-      caseDown: '',
-      shift: '',
-      option: '',
-    }
   },
   ArrowDown: {
     en: {
@@ -765,7 +753,7 @@ const KEYS = {
       caseDown: '',
       shift: '',
       option: '',
-    }
+    },
   },
   ArrowRight: {
     en: {
@@ -777,26 +765,16 @@ const KEYS = {
       caseDown: '',
       shift: '',
       option: '',
-    }
+    },
   },
 };
 
 const KEY_ROWS = [
-  ['Backquote', 'Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5', 'Digit6', 'Digit7', 'Digit8', 'Digit9', 'Digit0', 'Minus', 'Equal', 'Backspace'], 
+  ['Backquote', 'Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5', 'Digit6', 'Digit7', 'Digit8', 'Digit9', 'Digit0', 'Minus', 'Equal', 'Backspace'],
   ['Tab', 'KeyQ', 'KeyW', 'KeyE', 'KeyR', 'KeyT', 'KeyY', 'KeyU', 'KeyI', 'KeyO', 'KeyP', 'BracketLeft', 'BracketRight', 'Backslash', 'Delete'],
   ['CapsLock', 'KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ', 'KeyK', 'KeyL', 'Semicolon', 'Quote', 'Enter'],
   ['ShiftLeft', 'KeyZ', 'KeyX', 'KeyC', 'KeyV', 'KeyB', 'KeyN', 'KeyM', 'Comma', 'Period', 'Slash', 'ArrowUp', 'ShiftRight'],
-  ['ControlLeft', 'AltLeft', 'MetaLeft', 'Space', 'AltRight', 'ArrowLeft', 'ArrowDown', 'ArrowRight', 'MetaRight']
+  ['ControlLeft', 'AltLeft', 'MetaLeft', 'Space', 'AltRight', 'ArrowLeft', 'ArrowDown', 'ArrowRight', 'MetaRight'],
 ];
 
-// to create a new key_row 
-const keys__row = []
-function createKEY__ROW () {
-  document.onkeydown = function (e) {
-        keys__row.push(e.code)
-        console.log(keys__row)
-  }
-}
-
-
-export {KEYS, KEY_ROWS}
+export { KEYS, KEY_ROWS };

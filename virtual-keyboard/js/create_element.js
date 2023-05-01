@@ -1,8 +1,6 @@
-function createEl(parent, tag, className) {
+export default function createEl(parent, tag, className) {
   const el = document.createElement(tag);
   el.classList.add(className);
-  parent.append(el)
-  return el
+  parent.append(el);
+  return el;
 }
-
-export {createEl}
