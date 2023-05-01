@@ -1,8 +1,15 @@
-import {createEl} from './create_element.js'
-import {paintingKeyboard, clickTextEntry, keyPressTextEntry, initeShift, initeAlt, initeKeys, changeLang} from './keyboard/keyboard.js'
+import { createEl } from './create_element.js';
+import {
+  paintingKeyboard,
+  clickTextEntry,
+  keyPressTextEntry,
+  initeShift,
+  initeAlt,
+  initeKeys,
+  changeLang,
+} from './keyboard/keyboard.js';
 
-const body = document.body;
-const keyboardSection = createEl(body, 'section', 'keyboard');
+const keyboardSection = createEl(document.body, 'section', 'keyboard');
 
 keyboardSection.innerHTML = `<h1 class="keyboard__title">Виртуальная RSS-клавиатура</h1>
 <textarea class="keyboard__text" rows="7" cols="50" autofocus></textarea>
@@ -12,9 +19,9 @@ keyboardSection.innerHTML = `<h1 class="keyboard__title">Виртуальная 
 <p>Для переключения языка: левыe shift + control</p>
 </div>`;
 
-paintingKeyboard()
-clickTextEntry (document.querySelectorAll('.key'));
-keyPressTextEntry ()
-initeShift()
-initeAlt()
-initeKeys(changeLang, 'ShiftLeft', 'ControlLeft')
+paintingKeyboard();
+clickTextEntry(document.querySelectorAll('.key'));
+keyPressTextEntry();
+initeShift();
+initeAlt();
+initeKeys(changeLang, 'ShiftLeft', 'ControlLeft');
