@@ -210,9 +210,9 @@ const KEYS = {
       option: 'џ',
     },
     ru: {
-      caseDown: 'й',
-      shift: 'Й',
-      option: 'ј',
+      caseDown: 'ц',
+      shift: 'Ц',
+      option: 'џ',
     }
   },
   KeyE: {
@@ -789,13 +789,14 @@ const KEY_ROWS = [
   ['ControlLeft', 'AltLeft', 'MetaLeft', 'Space', 'AltRight', 'ArrowLeft', 'ArrowDown', 'ArrowRight', 'MetaRight']
 ];
 
-// to create a new key_row run this function. See the result in the console
+// to create a new key_row 
+const keys__row = []
 function createKEY__ROW () {
-  const keys__row = []
   document.onkeydown = function (e) {
-    KKKK.push(e.code)
+        keys__row.push(e.code)
+        console.log(keys__row)
   }
-  console.log(keys__row)
 }
+
 
 export {KEYS, KEY_ROWS}
