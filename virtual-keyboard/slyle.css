@@ -1,0 +1,182 @@
+.wrapper {
+  margin: 0 auto;
+  font-family: "Trebuchet MS", "Helvetica", sans-serif
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  
+}
+
+.keyboard__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.keyboard__text {
+  display: block;
+  margin: 10px auto 10px;
+  padding: 10px;
+  font-size: 18px;
+  color: #444444;
+  resize: none;
+}
+
+.keyboard__additional-inf {
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.keyboard__body {
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  background: #7b7a7a;
+}
+
+.keys__row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 6px;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-weight: 500;
+  background: #2c2b2b;
+  color: white;
+  border-radius: 10px 10px;
+}
+
+.key:hover {
+  background: rgb(18, 99, 99);
+  transition: all 0.1s linear;
+}
+
+.key:active,
+.key.active {
+  background: rgb(75, 204, 204);
+  transition: all 0.1s linear;
+}
+
+
+.Delete {
+  width: 70px;
+}
+.Delete::after {
+  content: "del";
+}
+
+.Backspace {
+  width: 100px;
+}
+.Backspace::after{
+  content: "backspace ";
+}
+
+.Tab {
+  width: 100px;
+}
+.Tab::after{
+  content: "tab";
+}
+
+.CapsLock {
+  width: 110px;
+  position: relative;
+}
+.CapsLock::after {
+  content: "CapsLock";
+}
+.CapsLock.on::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  background-color: rgb(0, 255, 81);
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  border-radius: 50%;
+}
+
+.Enter {
+  width: 110px;
+}
+.Enter::after {
+  content: "return";
+}
+
+.ShiftLeft,
+.ShiftRight {
+  width: 125px;
+}
+.ShiftLeft::after,
+.ShiftRight::after {
+  content: "shift";
+}
+
+.ControlLeft,
+.ControlRigth {
+  width: 80px;
+}
+.ControlLeft::after{
+  content: "control";
+}
+
+
+.AltLeft,
+.AltRight {
+  width: 80px;
+}
+.AltLeft::after,
+.AltRight::after {
+  content: "option";
+}
+
+.MetaLeft,
+.MetaRight {
+  width: 80px;
+}
+.MetaLeft::after,
+.MetaRight::after {
+  content: "command";
+}
+
+.Space {
+  width: 400px;
+}
+
+.ArrowUp::after {
+  content: "";
+  background: url(assets/icons/4829871_arrows_up_upload_icon.svg) no-repeat 50% 50%;
+  width: 50%;
+  height: 50%;
+}
+.ArrowDown::after {
+  content: "";
+  background: url(assets/icons/4829873_arrow_down_download_icon.svg) no-repeat 50% 50%;
+  width: 50%;
+  height: 50%;
+}
+.ArrowLeft::after {
+  content: "";
+  background: url(assets/icons/4829870_arrow_back_left_icon.svg) no-repeat 50% 50%;
+  width: 50%;
+  height: 50%;
+}
+.ArrowRight::after {
+  content: "";
+  background: url(assets/icons/4829869_arrow_next_right_icon.svg) no-repeat 50% 50%;
+  width: 50%;
+  height: 50%;
+}
