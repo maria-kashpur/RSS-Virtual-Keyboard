@@ -40,7 +40,7 @@ function convertToLowerCase () {
   keys.forEach(key => {key.textContent = key.textContent.toLowerCase()})
 }
 
-function changeKey () {
+function changeKeyValue () {
   KEY_ROWS.forEach(el => {
     el.forEach(subEl => {
       let key = document.querySelector( `.${subEl}`)
@@ -157,28 +157,33 @@ function initeAlt() {
   document.querySelector('.AltLeft').addEventListener('mousedown', (e) => {
     textArea.focus();
     letterType = 'option';
-    changeKey()
+    changeKeyValue()
   });
 
   document.querySelector('.AltLeft').addEventListener('mouseup', (e) => {
     textArea.focus();
     letterType = 'caseDown';
-    changeKey()
+    changeKeyValue()
   });
 
   document.addEventListener('keydown', (e) => {
     if (e.code === 'AltLeft') {
-      letterType = 'option'
-      changeKey ()
+      letterType = 'option';
+      changeKeyValue();
     }
   });
 
   document.addEventListener('keyup', (e) => {
     if (e.code === 'AltLeft') {
-      letterType = 'caseDown'
-      changeKey ()
+      letterType = 'caseDown';
+      changeKeyValue();
     }
   });
+}
+
+function changeLang() {
+  lang === 'en' ? lang = 'ru': lang = 'en';
+  changeKeyValue();
 }
 
 function keyPressTextEntry () {
@@ -208,14 +213,6 @@ function keyPressTextEntry () {
       } 
       isCapsLock = event.getModifierState('CapsLock')
     } 
-
-    if (event.code === 'MetaLeft' && event.shiftKey) {
-      lang === 'en' ? lang = 'ru' : lang = 'en';
-      document.querySelector('.keyboard__body').innerHTML = ''
-      paintingKeyboard();
-      clickTextEntry (document.querySelectorAll('.key'));
-      initeShift();
-    }
   })
 
   document.addEventListener('keyup', (event) => {
@@ -240,12 +237,35 @@ function createEl(parent, tag, className) {
   return el
 }
 
+function initeKeys(func, ...keys) {
+  let arrPressedKeys = [];  
 
+  document.addEventListener('keydown', (event) => {
+      if (event.repeat) return;
+      arrPressedKeys.push(event.code);
+  });
 
-  paintingKeyboard()
-  clickTextEntry (document.querySelectorAll('.key'));
-  keyPressTextEntry ()
-  initeShift()
-  initeAlt()
+  document.addEventListener('keyup', () => {
+      if (arrPressedKeys.length === 0) return;
+
+      let isFunc = true;
+      for (let key of keys) {
+          if (!arrPressedKeys.includes(key)) {
+              isFunc = false;
+              break;
+          }
+      }
+      if (isFunc) func();
+
+      arrPressedKeys = [];
+  });
+}
+
+paintingKeyboard()
+clickTextEntry (document.querySelectorAll('.key'));
+keyPressTextEntry ()
+initeShift()
+initeAlt()
+initeKeys(changeLang, 'ShiftLeft', 'ControlLeft')
 
 
