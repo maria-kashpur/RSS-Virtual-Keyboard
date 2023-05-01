@@ -1,22 +1,18 @@
 import {KEYS, KEY_ROWS} from './keys.js'
 
-
-
-// переменные
 const body = document.body;
 const keyboardSection = createEl(body, 'section', 'keyboard');
 
 let lang = 'en'
+let letterType = 'caseDown'
 
 keyboardSection.innerHTML = `<h1 class="keyboard__title">Виртуальная RSS-клавиатура</h1>
-<textarea class="keyboard__text" rows="5" cols="50" autofocus></textarea>
+<textarea class="keyboard__text" rows="7" cols="10" autofocus></textarea>
 <div class="keyboard__body"></div>
 <div class="keyboard__additional-inf">
 <p>Клавиатура создана в операционной системе MacOS</p>
 <p>Для переключения языка: левыe ctrl + alt</p>
 </div>`;
-
-
 
 function paintingKeyboard () {
   const keyWrapper = document.querySelector('.keyboard__body');
@@ -26,7 +22,7 @@ function paintingKeyboard () {
     el.forEach(subEl => {
       let key = createEl(keyRow, 'button', `key`);
       key.classList.add(`${subEl}`)
-      key.textContent = KEYS[subEl][lang].caseDown
+      key.textContent = KEYS[subEl][lang][letterType]
     })
   })
 }
@@ -91,16 +87,24 @@ function clickTextEntry () {
         } else if (key.classList.contains('ArrowRight')) {
           // click 'ArrowRight'
           textArea.focus()
-          let start = textArea.selectionStart === textArea.value.length  ? textArea.value.length : textArea.selectionStart + 1;
+          let range = textArea.selectionStart === textArea.value.length  ? textArea.value.length : textArea.selectionStart + 1;
           textArea.setSelectionRange(range, range)
         } else if (key.classList.contains('ArrowUp')) {
           // click 'ArrowUp'
-          textArea.focus()
-          console.dir(textArea.style.cssText)
-          console.dir(textArea)
+          textArea.focus();
+          let cols = + textArea.getAttribute('cols');
+          let range = textArea.selectionStart > cols ? textArea.selectionStart - cols - 1: textArea.selectionStart;
+          textArea.setSelectionRange(range, range);
+        } else if (key.classList.contains('ArrowDown')) {
+          // click 'ArrowDown'
+          textArea.focus();
+          let cols = + textArea.getAttribute('cols');
+          let A =  textArea.selectionStart + cols + 1;
+          textArea.setSelectionRange(A, A);
+        } else if (key.classList.contains(' ')) {
+          // click 'ArrowDown'
+          textArea.focus();
           
-          // let start = textArea.selectionStart === textArea.value.length  ? textArea.value.length : textArea.selectionStart + 1;
-          // textArea.setSelectionRange(range, range)
         } else {
           let letter = key.textContent;
           textArea.focus()
@@ -109,6 +113,7 @@ function clickTextEntry () {
     })
   })
 };
+
 
 function keyPressTextEntry () {
   document.addEventListener('keydown', (event) => {
@@ -140,13 +145,7 @@ function keyPressTextEntry () {
   })
 }
 
-
-
-
-
-
-
-
+// переключение языка, кнопки вверх вниз, кнопка shift, alt, delete
 
 function createEl(parent, tag, className) {
   const el = document.createElement(tag);
@@ -154,11 +153,6 @@ function createEl(parent, tag, className) {
   parent.append(el)
   return el
 }
-
-
-
-
-
 
 paintingKeyboard()
 clickTextEntry ();
