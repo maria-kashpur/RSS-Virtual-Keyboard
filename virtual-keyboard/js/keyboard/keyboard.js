@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-expressions */
 /* eslint-disable no-param-reassign */
 import { KEYS, KEY_ROWS } from './keys.js';
-import { createEl } from '../create_element.js';
+import createEl from '../create_element.js';
 
 let lang = '';
 if (localStorage.getItem('lang')) {
