@@ -98,7 +98,7 @@ function clickTextEntry(keys) {
         // click 'ArrowLeft'
         textArea.focus();
         let range = 0;
-        if (!textArea.selectionStart === 0) {
+        if (textArea.selectionStart !== 0) {
           range = textArea.selectionStart - 1;
         }
         textArea.setSelectionRange(range, range);
