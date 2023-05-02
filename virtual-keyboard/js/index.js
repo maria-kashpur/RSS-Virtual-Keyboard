@@ -1,4 +1,4 @@
-import { createEl } from './create_element.js';
+import createEl from './create_element.js';
 import {
   paintingKeyboard,
   clickTextEntry,
