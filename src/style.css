@@ -31,7 +31,7 @@ button {
 
 body {
   font-family: "Trebuchet MS", "Helvetica", sans-serif;
-  background: url('./../public/area.webp') no-repeat center center fixed;
+  background: url("./../public/area.webp") no-repeat center center fixed;
   background-size: cover;
   color: white;
 }
@@ -60,15 +60,27 @@ body {
 .keyboard__title {
   text-align: center;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
+  @media (max-width: 500px) {
+    font-size: 25px;
+  }
+  background-image: linear-gradient(90deg, #212222, #338fb1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-shadow: 3px -4px 5px #ffffff3c;
+  -webkit-text-stroke: 1px #ffffff;
 }
 
 .keyboard__text {
   display: block;
   margin: 10px auto 10px;
   padding: 10px;
-  color: #444444;
+  color: #ffffff;
   resize: none;
+  background-color: black;
+  border: white 1px solid;
+  box-shadow: 0px 0px 14px 7px rgb(181, 181, 181);
 }
 
 .keyboard__additional-inf {
@@ -77,6 +89,18 @@ body {
 }
 .keyboard__additional-inf p {
   text-align: center;
+}
+.key_inf {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #2c2b2b;
+  color: white;
+  border-radius: 10px 10px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid rgb(130, 130, 130);
+  
 }
 
 .keyboard__body {
@@ -107,9 +131,9 @@ body {
   font-size: 1em;
   padding: 3px;
   @media (max-width: 500px) {
-   font-size: 0.5em; 
-   width: 30px;
-   height: 30px;
+    font-size: 0.5em;
+    width: 30px;
+    height: 30px;
   }
   background: #2c2b2b;
   color: white;
@@ -215,29 +239,29 @@ body {
 
 .ArrowUp::after {
   content: "";
-  background: url(./../public/icons/4829871_arrows_up_upload_icon.svg) no-repeat 50%
-    50%;
+  background: url(./../public/icons/4829871_arrows_up_upload_icon.svg) no-repeat
+    50% 50%;
   width: 50%;
   height: 50%;
 }
 .ArrowDown::after {
   content: "";
-  background: url(./../public/icons/4829873_arrow_down_download_icon.svg) no-repeat
-    50% 50%;
+  background: url(./../public/icons/4829873_arrow_down_download_icon.svg)
+    no-repeat 50% 50%;
   width: 50%;
   height: 50%;
 }
 .ArrowLeft::after {
   content: "";
-  background: url(./../public/icons/4829870_arrow_back_left_icon.svg) no-repeat 50%
-    50%;
+  background: url(./../public/icons/4829870_arrow_back_left_icon.svg) no-repeat
+    50% 50%;
   width: 50%;
   height: 50%;
 }
 .ArrowRight::after {
   content: "";
-  background: url(./../public/icons/4829869_arrow_next_right_icon.svg) no-repeat 50%
-    50%;
+  background: url(./../public/icons/4829869_arrow_next_right_icon.svg) no-repeat
+    50% 50%;
   width: 50%;
   height: 50%;
 }

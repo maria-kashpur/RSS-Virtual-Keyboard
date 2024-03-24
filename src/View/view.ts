@@ -23,7 +23,7 @@ export default class View {
       <div class="keyboard__body"></div>
       <div class="keyboard__additional-inf">
         <p>Клавиатура создана в операционной системе MacOS</p>
-        <p>Для переключения языка: левыe shift + control</p>
+        <p>Для переключения языка: левыe <span class="key_inf">shift</span> + <span class="key_inf">control</span></p>
       </div>
     `;
   };
