@@ -84,11 +84,15 @@ body {
 }
 
 .keyboard__additional-inf {
-  margin: 0 auto;
-  font-size: 20px;
+  margin: 20px auto 0px;
+  
 }
 .keyboard__additional-inf p {
   text-align: center;
+  font-size: 14px;
+  @media (max-width: 500px) {
+    font-size: 10px;
+  }
 }
 .key_inf {
   display: inline-flex;
