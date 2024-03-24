@@ -20,11 +20,11 @@
 
 ## Ссылка на деплой:
 
-https://maria-kashpur.github.io/virtual-keyboard/virtual-keyboard/
+[https://maria-kashpur.github.io/virtual-keyboard/](https://maria-kashpur.github.io/virtual-keyboard/)
 
 ## Ссылка на ТЗ:
 
-https://github.com/rolling-scopes-school/tasks/blob/master/tasks/virtual-keyboard/virtual-keyboard-en.md
+[https://github.com/rolling-scopes-school/tasks/blob/master/tasks/virtual-keyboard/virtual-keyboard-en.md](https://maria-kashpur.github.io/virtual-keyboard/)
 
 ## Дополнительная информация:
 
